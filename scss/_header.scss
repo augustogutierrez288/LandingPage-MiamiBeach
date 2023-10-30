@@ -1,0 +1,85 @@
+.header-home{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    border-radius: 0 0 40px 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .navigation{
+        width: auto;
+        height: 100px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        margin: 0 100px 0 0 ;
+        z-index: 1;
+        .navigation-link{
+            font-size: 1rem;
+            font-weight: 400;
+            color: $white;
+            text-decoration: none;
+        }
+    }
+    .header-home-background{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        object-fit: cover;
+        z-index: -10;
+        border-radius: 0 0 40px 40px;
+    }
+    .header-home-fill{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -9;
+        border-radius: 0 0 40px 40px;
+        background-color: $opacity;
+    }
+    .header-home-card{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        margin: 30px 0 0 0;
+        .header-home-card-subtitle{
+            font-size: 1.6rem;
+            font-weight: 400;
+            color: $white;
+        }
+        .header-home-card-title{
+            font-size: 4rem;
+            font-weight: 700;
+            color: $white;
+            transition: .5s;
+            &:hover{
+                -webkit-text-stroke: 2px $white;
+                color: transparent;
+            }
+        }
+        .header-home-card-button{
+            display: inline-block;
+            font-size: 1rem;
+            font-weight: 400;
+            text-decoration: none;
+            color: $white;
+            background-color: transparent;
+            padding: 14px 70px;
+            margin: 20px 0 0 0;
+            border: 2px solid $white;
+            border-radius: 50px;
+        }
+    }
+
+}
+
